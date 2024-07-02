@@ -128,3 +128,11 @@ end
 ```
 
 It will be used as `optional_params` argument in gcs request. List of all supported attributes can be found here: https://hexdocs.pm/google_api_storage/GoogleApi.Storage.V1.Api.Objects.html#storage_objects_insert_simple/7
+
+## Running tests locally
+
+```
+export GCP_CREDENTIALS=`cat config/test-credentials.json`
+export WAFFLE_BUCKET=test-bucket
+mix test
+```
