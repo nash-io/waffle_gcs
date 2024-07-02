@@ -7,12 +7,12 @@ defmodule Waffle.Storage.Google.CloudStorage.MixProject do
       name: "Waffle GCS",
       description: description(),
       version: "0.1.1",
-      elixir: "~> 1.4",
+      elixir: "~> 1.13",
       elixirc_paths: elixirc_paths(Mix.env()),
       deps: deps(),
       package: package(),
       source_url: "https://github.com/kolorahl/waffle_gcs",
-      homepage_url: "https://github.com/kolorahl/waffle_gcs",
+      homepage_url: "https://github.com/kolorahl/waffle_gcs"
     ]
   end
 
@@ -28,7 +28,7 @@ defmodule Waffle.Storage.Google.CloudStorage.MixProject do
     [
       files: ~w(config/config.exs lib LICENSE mix.exs README.md),
       licenses: ["Apache-2.0"],
-      links: %{"GitHub" => "https://github.com/kolorahl/waffle_gcs"},
+      links: %{"GitHub" => "https://github.com/kolorahl/waffle_gcs"}
     ]
   end
 
@@ -40,7 +40,7 @@ defmodule Waffle.Storage.Google.CloudStorage.MixProject do
       {:waffle, "~> 1.1"},
       {:goth, "~> 1.1"},
       {:google_api_storage, "~> 0.12"},
-      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 end
